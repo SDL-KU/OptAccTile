@@ -1,6 +1,6 @@
 # OptAccTile
 
-The optimization process for hardware accelerators with multiple accelerator tiles ("OptAccTile):\
+The optimization process for hardware accelerators with multiple accelerator tiles (OptAccTile):\
 \
 Optimization of multi-core accelerator performance based on accurate performance estimation, Sunwoo Kim, Youngho Seo, Sungkyung Park, and Chester Sungchung Park, IEEE Access, Feb., 2022.\
 \
@@ -8,4 +8,4 @@ This algorithm is developed for the performance estimation of multicore accelera
 
 Contributors: Sunwoo Kim, Youngho Seo and Prof. Chester Sungchung Park\
 If you have any questions, please send an email to sunwkim@konkuk.ac.kr\
-Original release: Konkuk University, 2022\
+Original release: Konkuk University, 2022
