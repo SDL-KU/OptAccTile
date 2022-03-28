@@ -19,7 +19,7 @@ Multi-core accelerator optimization for convolutional neural networks (CNNs):
 2. Edit layer parameters.\
  %% parameters\
    mac_units_resource: Number of available MAC (multiplication and accumulation) units\
-   bram_resource: Maximum available size of on-chip buffer in accelerator (in terms of the numbers of pixels/weights)\ 
+   bram_resource: Maximum available size of on-chip buffer in accelerator (in terms of the numbers of pixels/weights)\
    target: Target bandwidth\
    step: Iteration step size for bandwidths\ 
    C_C: Input channels\
