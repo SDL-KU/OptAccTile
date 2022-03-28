@@ -21,7 +21,7 @@ Multi-core accelerator optimization for convolutional neural networks (CNNs):
    mac_units_resource: Number of available MAC (multiplication and accumulation) units\
    bram_resource: Maximum available size of on-chip buffer in accelerator (in terms of the numbers of pixels/weights)\
    target: Target bandwidth\
-   step: Iteration step size for bandwidths\ 
+   step: Iteration step size for bandwidths\
    C_C: Input channels\
    M_C: Output channels\
    E_C: Height of output feature maps\
