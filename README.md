@@ -18,21 +18,20 @@ Multi-core accelerator optimization for convolutional neural networks (CNNs):
 
 2. Edit layer parameters.\
  %% parameters\
-  mac_units_resource: Number of available MAC (multiplication and accumulation) units\
-  bram_resource: Maximum available size of on-chip buffer in accelerator (in terms of the numbers of pixels/weights)\ 
-  target: Target bandwidth\
-  step: Iteration step size for bandwidths\ 
-  C_C: Input channels\
-  M_C: Output channels\
-  E_C: Height of output feature maps\
-  F_C: Width of output feature maps\
-  R_C: Height of filter weights\
-  S_C: Width of filter weights\
-  U_C: Stride size
- 
+   mac_units_resource: Number of available MAC (multiplication and accumulation) units\
+   bram_resource: Maximum available size of on-chip buffer in accelerator (in terms of the numbers of pixels/weights)\ 
+   target: Target bandwidth\
+   step: Iteration step size for bandwidths\ 
+   C_C: Input channels\
+   M_C: Output channels\
+   E_C: Height of output feature maps\
+   F_C: Width of output feature maps\
+   R_C: Height of filter weights\
+   S_C: Width of filter weights\
+   U_C: Stride size\ 
  %% assign layers\
-  CNN_Layer: Layer numbers for layer parameters in '%% parameters' section\
-  num_clp: Number of cores in the multi-core accelerator
+   CNN_Layer: Layer numbers for layer parameters in '%% parameters' section\
+   num_clp: Number of cores in the multi-core accelerator
  
 3. Push "F5" to run the Matlab script
 
