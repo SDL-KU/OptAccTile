@@ -13,36 +13,36 @@ Original release: Konkuk University, 2022
 
 # How to Run
 
-Multi-core accelerator optimization: 
-1. Open "opt_tile.m" file in Matlab
+Multi-core accelerator optimization for convolutional neural networks (CNNs): \
+1. Open "opt_tile.m" file in Matlab\
 
-2. Edit layer parameters.
+2. Edit layer parameters.\
  %% parameters\
- mac_units_resource: Number of available MAC (multiplication and accumulation) units
- bram_resource: Maximum available size of on-chip buffer in accelerator (in terms of the numbers of pixels/weights)
+ mac_units_resource: Number of available MAC (multiplication and accumulation) units\
+ bram_resource: Maximum available size of on-chip buffer in accelerator (in terms of the numbers of pixels/weights)\
  
- target: Target bandwidth
- step: Iteration step size for bandwidths
+ target: Target bandwidth\
+ step: Iteration step size for bandwidths\
  
- C_C: Input channels
- M_C: Output channels
- E_C: Height of output feature maps
- F_C: Width of output feature maps
- R_C: Height of filter weights
- S_C: Width of filter weights
- U_C: Stride size
+ C_C: Input channels\
+ M_C: Output channels\
+ E_C: Height of output feature maps\
+ F_C: Width of output feature maps\
+ R_C: Height of filter weights\
+ S_C: Width of filter weights\
+ U_C: Stride size\
  
  %% assign layers\
- CNN_Layer: Layer numbers for layer parameters in '%% parameters' section
- num_clp: Number of cores in the multi-core accelerator
+ CNN_Layer: Layer numbers for layer parameters in '%% parameters' section\
+ num_clp: Number of cores in the multi-core accelerator\
  
-3. Push "F5" to run the Matlab script
+3. Push "F5" to run the Matlab script\
 
-4. Check the optimization results
- Performance: variable 'exeCycles' is the execution times for accelerator cores in terms of accelerator clock cycles
- Core dimensions: variable 'A(1)' include the optimiztion results
-  A(1).assign_layers: Layer numbers assigned to accelerator cores
-  A(1).tm: Tile sizes of output channels for accelerstor cores
-  A(1).tc: Tile sizes of input channels for accelerstor cores
-  A(1).te: Tile sizes of OFM height for accelerstor cores
-  A(1).tf: Tile sizes of OFM width for accelerstor cores
+4. Check the optimization results\
+ Performance: variable 'exeCycles' is the execution times for accelerator cores in terms of accelerator clock cycles\
+ Core dimensions: variable 'A(1)' include the optimiztion results\
+  A(1).assign_layers: Layer numbers assigned to accelerator cores\
+  A(1).tm: Tile sizes of output channels for accelerstor cores\
+  A(1).tc: Tile sizes of input channels for accelerstor cores\
+  A(1).te: Tile sizes of OFM height for accelerstor cores\
+  A(1).tf: Tile sizes of OFM width for accelerstor cores\
