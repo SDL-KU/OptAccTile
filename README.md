@@ -28,7 +28,7 @@ Multi-core accelerator optimization for convolutional neural networks (CNNs):
    F_C: Width of output feature maps\
    R_C: Height of filter weights\
    S_C: Width of filter weights\
-   U_C: Stride size\   
+   U_C: Stride size   
  %% assign layers\
    CNN_Layer: Layer numbers for layer parameters in '%% parameters' section\
    num_clp: Number of cores in the multi-core accelerator
